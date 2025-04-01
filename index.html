@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/My-graduation-pecture2.jpeg" class="Logo" alt="Logo">
+                <!--<img src="Intern/P/Images/My-graduation-pecture2.jpeg" class="Logo" alt="Logo">-->
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!--<i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i>-->
+            </nav>
+            <div class="header-text">
+                <p>Business Analyst | Data Analyst</p>
+                <h1>Hi, I am <span>Siphosethu Nyawo</span>  <!--  <br>Nyawo from Durban</h1>  -->
+            </div>
+        </div>
+    </div>
+
+    <!------------------------about------------------->
+    <div id="about">
+        <div class="container">
+            <div class=" row">
+                <div class="about-col-1">
+                    <img src="Images/My-graduation-pecture.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a dedicated ICT graduate with an Advanced Diploma in ICT and a Diploma in ICT in Business Analysis,
+                        possessing strong skills in data analysis, business intelligence, and machine learning.
+                        My expertise includes SQL, Python, C#, data visualization, and other programming languages.
+                        I am seeking an internship where I can apply my analytical and problem-solving skills while gaining hands-on experience
+                        in data-driven projects to advance in data analysis and business analysis.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience', event)">Experience</p>  -->
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                        <p class="tab-links" onclick="opentab('modules', event)">Modules</p>              
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <h4>Technical Skills</h4>
+                            <li>Data Collection and Integration</li>
+                            <li>SQL (SQL Server, ITS Integrator)</li>
+                            <li>Data Analysis (Quantitative and Qualitative)</li>
+                            <li>Data Visualization (PowerHEDA, PowerBI, Excel and Python)</li>
+                            <li>Report Development and Presentation</li>
+                            <li>Database Administration</li>
+                            <li>Data Pipeline Development</li>
+                            <li>Process Optimization and Improvement</li>
+                            <h4>Soft Skills</h4>
+                            <li>Collaboration and Teamwork</li>
+                            <li>Communication and Presentation Skills</li>
+                            <li>Analytical Thinking and Problem-Solving</li>
+                            <li>Attention to Detail</li>
+                            <li>Adaptability and Quick Learning</li>
+                            <li>Decision-Making</li>
+                            <li>Stakeholder Engagement</li>
+                            <li>Time Management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <h3>Company: CAPRISA (Current Position)</h3>
+                            <h4>Position: Intern </h4>
+                            <h4>Department: Data management</h4>
+                            <h4>Duties:</h4>
+                            <li>-Design, setup and maintain studies using data collection systems</li>
+                            <li>-Develop reports and visualizations for a study</li>
+                            <li>-Data analysis</li>
+                            <li>-Creating and maintaining data pipelines</li>
+                            <li>-Administration of data management systems</li>
+                            <li>-Improve data management processes</li>
+                            <h3>Company: Durban University of Technology (DUT)</h3>
+                            <h4>Position: Intern </h4>
+                            <h4>Department: Data Analytics and Data Sciences</h4>
+                            <h4>Year: 2023-2024</h4>
+                            <h4>Duties:</h4>
+                            <li>-Collecting data from disparate systems into one Higher Education Data Analyzer software (PowerHEDA)</li>
+                            <li>-Extracting data from the SQL Server and ITS integrator</li>
+                            <li>-Creating reports using a Microsoft Power Automate and SQL database</li>
+                            <li>-Preparing and presenting comprehensive reports to stakeholders</li>
+                            <li>-Performing quantitative and qualitative analysis to assist senior leaders in evaluating possible solutions to solve complex organizational problems</li>
+                            <li>-Working directly with the database analyst to achieve the best actions to take</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <h2>Durban University of Technology</h2>
+                            <h4>Year: 2024</h4>
+                            <h4>Level: NQF-7</h4>
+                            <li>Advanced Diploma in Information and Communications Technology (ICT)</li>
+                            <h4>Year: 2020-2022</h4>
+                            <h4>Level: NQF-6</h4>
+                            <li>Diploma in Information and Communications Technology (ICT) in Business Analysis</li>
+                            <h2>Africa Learn Collage</h2>
+                            <h4>Year: 2024</h4>
+                            <li>Software Development</li>
+                            <li>MS Azure Administrator</li>
+                            <li>DevOps</li>
+                            <li>MS Azure (Cloud) & Azure (Security) </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="modules">
+                        <ul>
+                            <h2><span>Major Modules covered in Advanced Diploma in ICT</span></h2>
+                            <li>APPLIED MATHEMATICS FOR COMPUTING</li>
+                            <li>BUSINESS INTELLIGENCE 3</li>
+                            <li>DATA STRUCTURES</li>
+                            <li>PLATFORM BASED DEVELOPMENT</li>
+                            <li>MACHINE INTELLIGENCE 3</li>
+                            <li>SOFTWARE DEVELOPMENT AND MANAGEMENT</li>
+                            <li>RESEARCH SKILLS</li>
+                            <h2>Major Modules covered in Business Analysis</h2>
+                            <li>BUSINESS INFORMATION SYSTEMS</li>
+                            <li>BUSINESS ANALYSIS</li>
+                            <li>BUSINESS FUNDAMENTALS</li>
+                            <li>INFORMATION MANAGEMENT</li>
+                            <li>APPLICATIONS DEVELOPMENT</li>
+                            <li>FINANCIAL ACCOUNTING</li>
+                            <li>COMPUTER APPLICATIONS IN BUSINESS & FINANCE</li>
+                            <li>THEORY OF INTERNAL AUDITING</li>
+                            <li>IT PROJECT MANAGEMENT</li>
+                            <li>INFORMATION AND COMMUNICATION LITERACY AND SKILLS</li>
+                            <li>THEORY OF INTERNAL AUDITING</li>
+                        </ul>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------------------Services--------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <!-- Service 1 -->
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Testing Services</h2>
+                    <p>
+                        I offer professional software testing services to ensure the quality, reliability, and performance of applications.
+                        My approach involves identifying potential issues, validating functionality, and
+                        ensuring that software meets the required standards before deployment
+                    </p>
+
+                    <h2>What I Do:</h2>
+                    <p>Conduct functional, performance, and regression testing.</p>
+                    <p>Design and execute detailed test plans and cases.</p>
+                    <p>Identify, document, and report bugs and issues.</p>
+                    <p>Collaborate with developers to resolve issues.</p>
+                    <p>Provide recommendations for improving software quality.</p>
+                    <!---- <a href="#">Learn more</a>  --->
+                </div>
+                <!-- Service 2 -->
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Machine Learning Projects</h2>
+                    <p>
+                        I develop and implement machine learning solutions to solve real-world problems.
+                        By leveraging data and algorithms, I create predictive models and automate decision-making processes to add value to businesses and individuals.
+                    </p>
+
+                    <h2>What I Do:</h2>
+                    <p>Build and train machine learning models for classification, regression, and clustering.</p>
+                    <p>Perform exploratory data analysis to uncover trends and insights.</p>
+                    <p>Deploy models for real-time or batch processing applications.</p>
+                    <p>Optimize models for improved accuracy and performance.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <!-- Service 3 -->
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Research and Academic Writing Assistance</h2>
+                    <p>
+                        I provide research and academic writing support for students and professionals.
+                        My expertise lies in ICT-related topics, ensuring well-structured, plagiarism-free, and high-quality work that meets academic standards.
+                    </p>
+
+                    <h2>What I Do:</h2>
+                    <p>Conduct in-depth research on topics in computing and ICT.</p>
+                    <p>Assist with systematic literature reviews and case studies.</p>
+                    <p>Draft, edit, and proofread academic papers and reports.</p>
+                    <p>Offer guidance on research methodologies and tools.</p>
+                    <!-- <a href="#">Learn more</a>  -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----- portfolio ------>
+    <!----  <div id="portfolio">
+          <div class="container">
+              <h1 class="sub-title">My Work</h1>
+              <div class="work-list">
+                  <div class="work">
+                      <img src="Images\DUT-Steve-Biko.jpg">
+                      <div class="layer">
+                          <h3>Software Testing Services</h3>
+                          <p>The app connect you to the talented people around the world.  Download it from play store</p>
+                          <a href="#"><i class="fa-light fa-link"></i></a>
+                      </div>
+
+                  </div>
+                  <div class="work">
+                      <img src="Images\DUT-Steve-Biko.jpg">
+                      <div class="layer">
+                          <h3>Machine Learning Projects</h3>
+                          <p>The app connect you to the talented people around the world.  Download it from play store</p>
+                          <a href="#"><i class="fa-light fa-link"></i></a>
+                      </div>
+                  </div>
+                  <div class="work">
+                      <img src="Images\DUT-Steve-Biko.jpg">
+                      <div class="layer">
+                          <h3>Research and Academic Writing Assistance</h3>
+                          <p>The app connect you to the talented people around the world.  Download it from play store</p>
+                          <a href="#"><i class="fa-light fa-link"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <a href="#" class="btn"> See more</a>
+          </div>
+      </div>    >
+
+      <!--------------------------Contact-------------------------->
+    <!--------------------------Excluding this part for intership-------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> funluckysipho@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0764609833</p>
+                    <!--<div class="social-icons">
+                        <a href="https://www.linkedin.com/in/siphosethu-nyawo-8312b0257" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/funlucky.nyawo?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">      HIDDING THIS PART
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/funluckynyawo?igsh=MzNlNGNkZWQ4Mg==" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>-->
+                    <a href="Images\SIPHOSETHU NYAWO (INTERN).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Siphosethu Nyawo<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+  
+
+
+    <script>
+        document.querySelectorAll('.work').forEach((work) => {
+            work.addEventListener('click', function () {
+                const img = this.querySelector('img');
+                img.classList.add('clicked');
+                setTimeout(() => {
+                    img.classList.remove('clicked');
+                }, 500); // Removes the "clicked" class after 0.5 seconds
+            });
+        });
+
+    </script>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, event) {
+            // Remove 'active-link' from all tab links
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            // Remove 'active-tab' from all tab contents
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            // Add 'active-link' to the clicked tab
+            event.currentTarget.classList.add("active-link");
+
+            // Add 'active-tab' to the corresponding content
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        var menuOpenIcon = document.querySelector('.fa-bars');
+        var menuCloseIcon = document.querySelector('.fa-circle-xmark');
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+            menuOpenIcon.style.display = 'none';
+            menuCloseIcon.style.display = 'block';
+            // document.body.style.overflow = "hidden"; // Disable scrolling
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+            menuOpenIcon.style.display = 'block';
+            menuCloseIcon.style.display = 'none';
+            //document.body.style.overflow = "auto"; // Enable scrolling
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwKeYIMDEtmX57DkWpXl8kSEE7_G_uSI1qWuOU0EUEt1W5xs8g_yYQDjHBpA9Ma_I0xKA/exec';
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+</html>
